@@ -7,26 +7,6 @@ environment:
   MSBUILD_FLAGS: /verbosity:minimal /maxcpucount
   APPVEYOR_SAVE_CACHE_ON_ERROR: true
   matrix:
-# Makefile
-  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
-    VS_VERSION: 2019
-    BUILDER: make
-    LANGUAGE: cc
-
-  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
-    VS_VERSION: 2019
-    BUILDER: make
-    LANGUAGE: python
-
-  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
-    VS_VERSION: 2019
-    BUILDER: make
-    LANGUAGE: java
-
-  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
-    VS_VERSION: 2019
-    BUILDER: make
-    LANGUAGE: dotnet
 # CMake
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
     VS_VERSION: 2019
