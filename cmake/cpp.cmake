@@ -214,7 +214,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   ${GFLAGS_DEP}
   glog::glog
   protobuf::libprotobuf
-  Coin::CbcSolver Coin::OsiCbc Coin::ClpSolver Coin::OsiClp
+  Coin::CbcSolver Coin::OsiCbc
+  Coin::ClpSolver Coin::OsiClp
   Threads::Threads)
 if(WIN32)
   target_link_libraries(${PROJECT_NAME} PUBLIC psapi.lib ws2_32.lib)
